@@ -2,6 +2,7 @@
 FROM public.ecr.aws/lts/ubuntu:latest
 
 # Install dependencies: replace apt-get with apt
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt update -y
 RUN apt install -y apache2
 
