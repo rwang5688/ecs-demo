@@ -1,5 +1,5 @@
 # Base image: replace 12.04 with 18.04
-FROM ubuntu:18.04
+FROM public.ecr.aws/lts/ubuntu:latest
 
 # Install dependencies: replace apt-get with apt
 RUN apt update -y
